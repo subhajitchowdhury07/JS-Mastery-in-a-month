@@ -8,6 +8,13 @@ accountType="current"
 accountName= "what is your problem"
 
 
+/*
+
+prefer not to use var
+for easily update purpose
+
+*/
+
 // console.log(accountType);
 // console.log(accountName);
 
