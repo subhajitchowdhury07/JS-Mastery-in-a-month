@@ -28,3 +28,14 @@ function userLoginStatus(username){
 }
 
 console.log(userLoginStatus("58"));
+
+// **************  
+
+// use case of Rest operator
+
+function calculateCartPrice(...num1){
+    return num1;
+}
+
+console.log(calculateCartPrice(100,23,544,673,733));
+
