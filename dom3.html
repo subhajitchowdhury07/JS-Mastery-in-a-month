@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom practice 3</title>
+</head>
+<body style="background-color: #212121; color:#fff">
+  <ul class="language">
+    <li class="li1">Javascripts</li>
+  </ul>
+</body>
+<script>
+  function addlanguage(langName) {
+    const li= document.createElement('li');
+    li.innerHTML=`${langName}`
+    document.querySelector('.language').appendChild(li)
+  }
+  // document.body.appendChild('langName')
+  addlanguage('Python');
+  const his =addlanguage('History');
+  // his.innerHTML.style.color="blue"
+  const takeLI= document.querySelector('.li1');
+  takeLI.style.color='green';
+  takeLI.innerHTML=`Typescript`;
+
+  const newLi =document.createElement('li');
+  document.querySelector('.language').appendChild(newLi);
+  newLi.innerHTML='Javascript';
+  newLi.style.color='red'
+  newLi.style.backgroundColor='yellow'
+  const seconLang = document.querySelector('li:nth-child(2)');
+  // console.log(seconLa
+  const newLI1 =document.createElement('li');
+  newLI1.textContent= "Mojo"
+  seconLang.replaceWith(newLI1);
+  newLI1.outerHTML='<li>how you doing</li>'
+  seconLang.remove();
+
+</script>
+</html>

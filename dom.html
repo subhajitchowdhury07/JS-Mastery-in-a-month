@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="name">
+        <div class="day">vgghv</div>
+        <div class="day">hjjv</div>
+        <div class="day">tffk,h,</div>
+    </div>
+</body>
+<script>
+    const yt = document.querySelector('.name');
+    console.log(yt);
+    console.log(yt.children);
+    console.log(yt.children[2]);
+    
+    for (let index = 0; index < yt.children.length; index++) {
+        console.log(yt.children[index].innerHTML)
+        
+    }
+
+    yt.style="color:green; font-size:20px; font-weight:900"
+    yt.children[1].style="color:orange";
+    yt.children[1].innerHTML='Not Apply'
+</script>
+</html>
